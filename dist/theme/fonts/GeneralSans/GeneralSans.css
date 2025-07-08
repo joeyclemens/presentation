@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('./GeneralSans-Regular.otf');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('./source-sans-pro-italic.eot');
+    src: url('./source-sans-pro-italic.eot?#iefix') format('embedded-opentype'),
+         url('./source-sans-pro-italic.woff') format('woff'),
+         url('./source-sans-pro-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('./GeneralSans-Semibold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('./GeneralSans-Medium.otf');
+
+    font-weight: 600;
+    font-style: italic;
+}
