@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Joeys World</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black-contrast.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			
+
+
+				<section data-transition="slide" data-background="Images/title-background.jpg" data-background-transition="zoom">
+					<img src="Images/20250707_1454_Hack to the Future_simple_compose_01jzjnwjkxerys0qqqe374fcva.png" alt="Hack to the Future Title" style="max-width: 95vw; max-height: 90vh; display: block; margin: 0 auto;">
+				</section>
+
+				<section data-transition="convex" data-background="Images/background2.jpg" data-background-transition="zoom" data-auto-animate data-state="python-slide">
+					<style>
+.reveal .slides section {
+            text-align: center;
+        }
+        
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            /* Removed overflow-x: auto to prevent horizontal scrolling */
+        }
+        
+        .pain-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e8eaf6 100%);
+            border-radius: 15px;
+            padding: 2.2rem 1.5rem;
+            color: #222;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            flex: 1 0 340px;
+            min-width: 340px;
+            max-width: 400px;
+            position: relative;
+            overflow: hidden;
+            border: 1.5px solid #e0e0e0;
+            font-size: 1.2em;
+        }
+        .pain-card::before {
+            display: none;
+        }
+        .pain-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            border-color: #b3b3b3;
+        }
+        .pain-card:nth-child(1),
+        .pain-card:nth-child(2),
+        .pain-card:nth-child(3) {
+            background: linear-gradient(135deg, #f8fafc 0%, #e8eaf6 100%);
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: none;
+            color: #222;
+        }
+        .card-description {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            opacity: 0.95;
+            color: #444;
+        }
+        .card-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .slide-title {
+            background: none;
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+            background-clip: unset;
+            color: #111 !important;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-shadow: none;
+        }
+        
+        .reveal .slides section h1,
+        .reveal .slides section h2 {
+            color: inherit;
+        }
+  .slide-content-relative {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+  }
+  .slide-logo {
+    position: absolute;
+    left: -12px;
+    bottom: -12px;
+    margin: 0;
+    width: 54px;
+    height: auto;
+    opacity: 0.92;
+    pointer-events: none;
+    z-index: 10;
+        }
+					</style>
+					<div class="slide-content-relative">
+					 <h2 class="slide-title">Common Problems</h2>
+					 <div class="card-container">
+						 <div class="pain-card">
+							 <div class="card-icon">🔄</div>
+							 <div class="card-title">Repetitive Work</div>
+							 <div class="card-description">Hours of manual tasks that could be automated</div>
+						 </div>
+						 <div class="pain-card">
+							 <div class="card-icon">📦</div>
+							 <div class="card-title">Poor Fit Solutions</div>
+							 <div class="card-description">Off-the-shelf software that almost worked</div>
+						 </div>
+						 <div class="pain-card">
+							 <div class="card-icon">🚫</div>
+							 <div class="card-title">No Available Tools</div>
+							 <div class="card-description">Complex challenges with no existing solutions</div>
+						 </div>
+					 </div>
+					</div>
+				</section>
+
+
+				  
+  
+				<!-- SLIDE 3 – The Big Idea  -->
+				
+					
+				<section data-transition="convex" data-background="Images/background2.jpg" data-background-transition="zoom" data-auto-animate data-state="python-slide">
+
+					<style>
+						
+						/* Scoped styles: only affect elements inside .big‑idea */
+						.big-idea .fragment {
+						opacity: 0;
+						transform: translateY(30px);
+						animation: bounceIn 0.6s forwards;
+						}
+						.big-idea .fragment.delay-1 { animation-delay: 0.4s; }
+					 	.big-idea .fragment.delay-2 { animation-delay: 0.8s; }
+						
+						@keyframes bounceIn {
+						0%   { opacity: 0; transform: translateY(30px); }
+						60%  { opacity: 1; transform: translateY(-10px); }
+						100% { transform: translateY(0); }
+						}
+						</style>
+					<h2 style="color:#182643;">💡 The solution</h2>
+					
+					<p class="fragment delay-0"><strong>When the tools don’t exist…</strong></p>
+					<p class="fragment delay-1">Build your own. <br><br>
+						Why settle for tools that almost work<br>
+						when you can create exactly what you need?
+					  </p>
+
+					
+					
+					</section>
+					
+			  <!-- New slide: How Did I Build It? (two card/column style) -->
+              <section data-transition="convex" data-background="Images/background2.jpg" data-background-transition="zoom" data-auto-animate>
+                <h2 class="how-title">How Did I Build It?</h2>
+                <div class="how-subtitle"><img src="images/python-logo-only.svg" alt="Python Logo" class="python-logo" /> Phase 1: Python</div>
+                <div class="how-cols">
+                  <div class="how-col pros">
+                    <h3>✅ Strengths</h3>
+                    <ul>
+                      <li>Easy to learn and write</li>
+                      <li>Huge library ecosystem</li>
+                      <li>Strong community support</li>
+					  <li>Great for rapid prototyping</li>
+					  
+                    </ul>
+                  </div>
+                  <div class="how-col cons">
+                    <h3>❌ Limitations</h3>
+                    <ul>
+                      <li>Can be slow for heavy tasks</li>
+                      <li>Distribution is tricky</li>
+                    </ul>
+                  </div>
+                </div>
+					<style>
+                  .how-title {
+                    font-size: 2.2rem;
+                    font-weight: bold;
+                    color: #182643;
+                    margin-bottom: 0.2em;
+                    text-align: center;
+                  }
+                  .how-subtitle {
+                    font-size: 2.2rem;
+                    color: #1b2735;
+                    margin-bottom: 1.2vh;
+                    text-align: center;
+                    font-weight: 500;
+                    letter-spacing: 0.01em;
+                  }
+                  .python-logo {
+                    height: 1.6em;
+                    vertical-align: middle;
+                    margin-right: 0.3em;
+                    display: inline-block;
+                  }
+                  .how-cols {
+                    display: flex;
+                    gap: 7vw;
+                    justify-content: center;
+                    margin-top: 2vh;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    max-width: 900px;
+                  }
+                  .how-col {
+                    background: #fff;
+                    border-radius: 18px;
+                    box-shadow: 0 2px 12px #0001;
+                    padding: 1.5em 1.5em 1.2em 1.5em;
+                    min-width: 210px;
+                    max-width: 280px;
+                    flex: 1 1 210px;
+                    font-size: 0.62em;
+                    margin-bottom: 1.2vh;
+                    display: grid;
+                    grid-template-rows: auto 1fr;
+                    row-gap: 0.5em;
+                    align-items: start;
+                    justify-items: center;
+                  }
+                  .how-col h3 {
+                    margin-top: 0;
+                    margin-bottom: 0.2em;
+                    font-size: 1.1em;
+                    font-weight: 600;
+                    text-align: center;
+                    grid-row: 1;
+                  }
+                  .how-col ul {
+                    padding-left: 1.1em;
+                    text-align: left;
+                    margin: 0;
+                    grid-row: 2;
+                  }
+                  .how-col li {
+                    margin-bottom: 0.4em;
+                    font-size: 1em;
+                  }
+                  .how-col.pros {
+                    border-left: 7px solid #27ae60;
+                    background: linear-gradient(120deg, #e8fbe8 0%, #f8fafc 100%);
+                    box-shadow: 0 2px 16px #27ae6022;
+                  }
+                  .how-col.cons {
+                    border-left: 7px solid #e74c3c;
+                    background: linear-gradient(120deg, #fdeaea 0%, #f8fafc 100%);
+                    box-shadow: 0 2px 16px #e74c3c22;
+                  }
+                  @media (max-width: 900px) {
+                    .how-cols {
+                      flex-direction: column;
+                      align-items: center;
+                    }
+                    .how-col {
+                      max-width: 96vw;
+                      min-width: 0;
+                      margin-bottom: 2vh;
+                      padding: 1.2em 1em 1em 1em;
+                      font-size: 1em;
+					  }
+					}
+					</style>
+              </section>
+
+                <!-- New slide: How Did I Build It? (Phase 2: Rust) -->
+                <section data-transition="convex" data-background="Images/background2.jpg" data-background-transition="zoom" data-auto-animate>
+                  <h2 class="how-title">How Did I Build It?</h2>
+                  <div class="how-subtitle"><img src="images/rust-logo-512x512.png" alt="Rust Logo" class="rust-logo" /> Step 2: Rust</div>
+                  <div class="how-cols">
+                    <div class="how-col pros">
+                      <h3>✅ Strengths</h3>
+                      <ul>
+                        <li>Blazing fast and efficient</li>
+                        <li>Produces single, portable binaries</li>
+                        <li>No runtime or interpreter needed</li>
+                        <li>Great for performance-critical tasks</li>
+                      </ul>
+					</div>
+                    <div class="how-col cons">
+                      <h3>❌ Limitations</h3>
+                      <ul>
+                        <li>Steeper learning curve</li>
+                        <li>Slower to prototype</li>
+                        <li>Smaller ecosystem (but growing)</li>
+                      </ul>
+					  </div>
+					</div>
+						<style>
+                    .rust-logo {
+                      height: 1.6em;
+                      vertical-align: middle;
+                      margin-right: 0.3em;
+							display: inline-block;
+						}
+						</style>
+					</section>
+
+                <!-- New slide: Coverflow (iTunes-style) -->
+                <section data-transition="convex" data-background="Images/background2.jpg" data-background-transition="zoom" data-auto-animate>
+                  
+                  <div class="coverflow" id="coverflow">
+                    <button class="coverflow-arrow coverflow-arrow-left" aria-label="Previous app">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 8L12.5 16L19.5 24" stroke="#222" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <div class="coverflow-cards" id="coverflow-cards">
+                      <!-- Remove any static .coverflow-card elements here! -->
+							</div>
+                    <button class="coverflow-arrow coverflow-arrow-right" aria-label="Next app">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 8L19.5 16L12.5 24" stroke="#222" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+						</div>
+						<style>
+                    .coverflow {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin: 4vh 0 2vh 0;
+                      min-height: 260px;
+                      position: relative;
+                      perspective: 1200px;
+                      perspective-origin: 50% 50%;
+                    }
+                    .coverflow-arrow {
+                      z-index: 10;
+                      background: linear-gradient(135deg, #eaf6ff 0%, #d0e2f7 100%);
+                      border: none;
+                      border-radius: 50%;
+                      width: 52px;
+                      height: 52px;
+                      box-shadow: 0 4px 16px #0002, 0 1.5px 6px #0001;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      cursor: pointer;
+                      transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s, background 0.18s;
+                      outline: none;
+                      margin: 0 0.5em;
+                      padding: 0;
+                      font-size: 1.5em;
+                    }
+                    .coverflow-arrow svg {
+                      width: 32px;
+                      height: 32px;
+                    }
+                    .coverflow-arrow:active {
+                      background: linear-gradient(135deg, #d0e2f7 0%, #eaf6ff 100%);
+                    }
+                    .coverflow-arrow:hover {
+                      transform: scale(1.13) translateY(-2px);
+                      box-shadow: 0 8px 32px #0003, 0 2px 8px #0002;
+                      background: linear-gradient(135deg, #eaf6ff 0%, #b3d1f7 100%);
+                    }
+                    .coverflow-cards {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      width: 700px;
+                      max-width: 95vw;
+                      position: relative;
+                      height: 180px;
+                      z-index: 1;
+                      perspective: inherit;
+                    }
+                    .coverflow-card {
+                      background: linear-gradient(135deg, #f8fafc 0%, #e8eaf6 100%);
+                      border-radius: 20px;
+                      box-shadow: 0 8px 40px #0003, 0 3px 12px #0001;
+                      width: 12em;
+                      height: 10em;
+                      min-height: unset;
+                      font-size: 1em;
+                      padding: 0.8em 0.8em 0.5em 0.8em;
+                      position: absolute;
+                      left: 50%;
+                      top: 50%;
+                      opacity: 1;
+                      transition: transform 0.5s cubic-bezier(.4,2,.6,1), box-shadow 0.18s, opacity 0.18s;
+                      text-align: center;
+                      z-index: 2;
+                      cursor: pointer;
+                      will-change: transform, opacity;
+                    }
+                    .coverflow-card.coverflow-center {
+                      transform: translate(-50%, -50%) scale(1) rotateY(0deg);
+                      z-index: 3;
+                      opacity: 1;
+                      box-shadow: 0 12px 48px #0004, 0 4px 16px #0002;
+                    }
+                    .coverflow-card.coverflow-left {
+                      transform: translate(-120%, -50%) scale(0.8) rotateY(35deg);
+                      z-index: 2;
+                      opacity: 0.7;
+                      box-shadow: 0 2px 12px #0001;
+                      pointer-events: none;
+                    }
+                    .coverflow-card.coverflow-right {
+                      transform: translate(20%, -50%) scale(0.8) rotateY(-35deg);
+                      z-index: 2;
+                      opacity: 0.7;
+                      box-shadow: 0 2px 12px #0001;
+                      pointer-events: none;
+                    }
+                    .coverflow-card.coverflow-hidden {
+							  opacity: 0;
+                      pointer-events: none;
+                      z-index: 0;
+                      transform: translate(-50%, -50%) scale(0.5) rotateY(0deg);
+                    }
+                    .coverflow-app-icon {
+                      font-size: 1.7em;
+                      margin-bottom: 0.1em;
+                    }
+                    .coverflow-app-label {
+                      margin-bottom: 0.2em;
+                      font-size: 1em;
+                    }
+                    .coverflow-app-desc {
+                      margin-bottom: 0.2em;
+                      font-size: 0.92em;
+                    }
+                    .coverflow-app-link {
+                      font-family: 'GeneralSans', monospace;
+                      position: relative;
+                      width: auto;
+                      display: inline-block;
+                      color: #223;
+                      text-decoration: none;
+                      border-radius: 6px;
+                      border: 1.5px solid #b0c4d6;
+                      background: linear-gradient(135deg, #eaf0fa 0%, #cfd8e3 100%);
+                      text-align: center;
+                      padding: 7px 14px 6px;
+                      margin: 6px;
+                      transition: opacity 0.5s ease, background 0.18s, box-shadow 0.18s, color 0.18s, transform 0.1s;
+							  opacity: 1;
+                      box-shadow: 0px 3px 0px #b0c4d6;
+                      font-size: 0.92em;
+                      font-weight: 600;
+                      cursor: pointer;
+                    }
+                    .coverflow-app-link:hover {
+                      background: linear-gradient(135deg, #dbeafe 0%, #b6c6d8 100%);
+                      color: #182643;
+                      transform: translateY(-2px);
+                    }
+                    .coverflow-app-link:active {
+                      background: #b6c6d8;
+                      color: #111;
+                      transform: translateY(2px);
+                      box-shadow: none;
+                      transition: all 0.1s;
+                    }
+                    .coverflow-app-image {
+                      width: 64px;
+                      height: 64px;
+                      border-radius: 10px;
+                      margin-bottom: 0.4em;
+                    }
+                    @media (max-width: 700px) {
+                      .coverflow-card {
+                        width: 8em;
+                        height: 7em;
+                        font-size: 0.85em;
+                        padding: 0.5em 0.5em 0.3em 0.5em;
+                      }
+                      .coverflow-app-icon {
+                        font-size: 1.2em;
+                      }
+                    }
+                  </style>
+                  <script>
+                    // Simple coverflow logic for demo (no external dependencies)
+                    const coverflowData = [
+                      {
+                        img: '',
+                        icon: '📊',
+                        label: 'Excel File Comparison Tool',
+                        desc: 'Quickly compare two Excel files and highlight differences',
+                        link: 'http://127.0.0.1:8080/'
+                      },
+                      {
+                        img: '',
+						icon: '🔍',
+                        label: 'Item Finder',
+                        desc: 'Quickly search and locate items across multiple databases',
+                        link: 'http://127.0.0.1:8082/'
+                      },
+                      {
+                        img: '',
+						icon: '📦',
+                        label: 'Database Viewer',
+                        desc: 'Allows us to look at all databases on the server from one place.',
+                        link: 'http://127.0.0.1:5000/'
+                      },
+					  {
+                        img: '',
+						icon: '🔗',
+                        label: 'External Data Check',
+                        desc: 'Allows us to check Item Codes and descriptions before importing.',
+                        link: 'http://127.0.0.1:5001'
+                      }
+                    ];
+                    let coverflowIndex = 0;
+                    function renderCoverflow() {
+                      const cards = document.getElementById('coverflow-cards');
+                      cards.innerHTML = '';
+                      for (let i = 0; i < coverflowData.length; i++) {
+                        let cls = 'coverflow-card coverflow-hidden';
+                        if (i === coverflowIndex) cls = 'coverflow-card coverflow-center';
+                        else if (i === (coverflowIndex - 1 + coverflowData.length) % coverflowData.length) cls = 'coverflow-card coverflow-left';
+                        else if (i === (coverflowIndex + 1) % coverflowData.length) cls = 'coverflow-card coverflow-right';
+                        const app = coverflowData[i];
+                        const card = document.createElement('div');
+                        card.className = cls;
+                        card.innerHTML = `
+  ${app.img ? `<img src="${app.img}" alt="${app.label}" class="coverflow-app-image">` : (app.icon ? `<span class="coverflow-app-icon">${app.icon}</span>` : '')}
+  <div class="coverflow-app-label">${app.label}</div>
+  <div class="coverflow-app-desc">${app.desc}</div>
+  <a href="${app.link ? app.link : '#'}" class="coverflow-app-link" target="_blank" rel="noopener noreferrer">Open App</a>
+`;
+                        cards.appendChild(card);
+                      }
+                    }
+                    function prevCoverflow() {
+                      coverflowIndex = (coverflowIndex - 1 + coverflowData.length) % coverflowData.length;
+                      renderCoverflow();
+                    }
+                    function nextCoverflow() {
+                      coverflowIndex = (coverflowIndex + 1) % coverflowData.length;
+                      renderCoverflow();
+                    }
+                    document.addEventListener('DOMContentLoaded', function() {
+                      renderCoverflow();
+                      document.querySelector('.coverflow-arrow-left').addEventListener('click', prevCoverflow);
+                      document.querySelector('.coverflow-arrow-right').addEventListener('click', nextCoverflow);
+                    });
+                  </script>
+					  </section>
+					
+                <!-- Final blank slide -->
+                <section data-transition="slide" data-background="Images/title-background.jpg" data-background-transition="zoom">
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				transition: 'slide',
+				transitionSpeed: 'default',
+				backgroundTransition: 'fade'
+			});
+		</script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+			// Function to change the theme based on the current slide
+			Reveal.on('slidechanged', function(event) {
+			const themeLink = document.getElementById('theme');
+			// Use whatever condition makes sense for your theme switching
+			if (event.indexh === 0) { // First horizontal slide
+				themeLink.setAttribute('href', 'dist/theme/black-contrast.css');
+			} else {
+				themeLink.setAttribute('href', 'dist/theme/white-contrast.css');
+			}
+			});
+
+		</script>
+
+		
+
+	</body>
+</html>
